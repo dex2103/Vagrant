@@ -3,7 +3,7 @@
   hosts: all
   become: true
   vars:
-    git_repository: "https://github.com/Panda-Academy-Core-2-0/Ansible_roles.git"
+    git_repository: "https://github.com/dex2103/Ansible_roles.git"
     git_branch: "main"
   tasks:
     - name: Create a directory if it does not exist
