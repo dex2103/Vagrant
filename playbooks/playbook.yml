@@ -1,0 +1,7 @@
+- name: add panda user
+  hosts: all
+  become: true
+
+  roles:
+    - user
+    - packages
