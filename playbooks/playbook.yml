@@ -5,3 +5,7 @@
   roles:
     - user
     - packages
+    - geerlingguy.docker
+    - christiangda.awscli
+    - christiangda.awscli_configure
+    - diodonfrost.terraform
