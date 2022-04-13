@@ -1,6 +1,6 @@
 ---
   roles:
-    - name: geerlingguy.dockerm
+    - name: geerlingguy.docker
       version: 4.1.3
     - name: christiangda.awscli
       version: 1.0.2
