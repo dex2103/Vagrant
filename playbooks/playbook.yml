@@ -1,7 +1,12 @@
 - name: add panda user
   hosts: all
   become: true
-
+   
+  vars:
+    docker_users:
+      - panda
+      - vagrant
+  
   roles:
     - user
     - packages
