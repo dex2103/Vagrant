@@ -22,6 +22,13 @@ Vagrant.configure("2") do |config|
     ansible.galaxy_command = "sudo ansible-galaxy install --role-file=%{role_file} --roles-path=%{roles_path}"
     ansible.playbook = "playbooks/playbook.yml"
   end
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.playbook = "playbooks/infrastructure.yml"
+    ansible.extra_vars = {
+      git_repository: "https://github.com/dex2103/Infrastructure",
+      git_branch: "main"
+    }
+  end
   if VAGRANT_COMMAND == "ssh"
     config.ssh.username = 'panda'
   end
